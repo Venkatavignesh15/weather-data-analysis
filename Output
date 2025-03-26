@@ -1,1 +1,96 @@
+Missing values before cleaning:
+MinTemp           0
+MaxTemp           0
+Rainfall          0
+Evaporation       0
+Sunshine          3
+WindGustDir       3
+WindGustSpeed     2
+WindDir9am       31
+WindDir3pm        1
+WindSpeed9am      7
+WindSpeed3pm      0
+Humidity9am       0
+Humidity3pm       0
+Pressure9am       0
+Pressure3pm       0
+Cloud9am          0
+Cloud3pm          0
+Temp9am           0
+Temp3pm           0
+RainToday         0
+RISK_MM           0
+RainTomorrow      0
+dtype: int64
+Missing values after cleaning:
+ MinTemp          0
+MaxTemp          0
+Rainfall         0
+Evaporation      0
+Sunshine         0
+WindGustDir      0
+WindGustSpeed    0
+WindDir9am       0
+WindDir3pm       0
+WindSpeed9am     0
+WindSpeed3pm     0
+Humidity9am      0
+Humidity3pm      0
+Pressure9am      0
+Pressure3pm      0
+Cloud9am         0
+Cloud3pm         0
+Temp9am          0
+Temp3pm          0
+RainToday        0
+RISK_MM          0
+RainTomorrow     0
+dtype: int64
+   MinTemp  MaxTemp  Rainfall  ...  RainToday  RISK_MM RainTomorrow
+0      8.0     24.3       0.0  ...         No      3.6          Yes
+1     14.0     26.9       3.6  ...        Yes      3.6          Yes
+2     13.7     23.4       3.6  ...        Yes     39.8          Yes
+3     13.3     15.5      39.8  ...        Yes      2.8          Yes
+4      7.6     16.1       2.8  ...        Yes      0.0           No
 
+[5 rows x 22 columns]
+
+Data columns (total 22 columns):
+ #   Column         Non-Null Count  Dtype  
+---  ------         --------------  -----  
+ 0   MinTemp        328 non-null    float64
+ 1   MaxTemp        328 non-null    float64
+ 2   Rainfall       328 non-null    float64
+ 3   Evaporation    328 non-null    float64
+ 4   Sunshine       328 non-null    float64
+ 5   WindGustDir    328 non-null    object 
+ 6   WindGustSpeed  328 non-null    float64
+ 7   WindDir9am     328 non-null    object 
+ 8   WindDir3pm     328 non-null    object 
+ 9   WindSpeed9am   328 non-null    float64
+ 10  WindSpeed3pm   328 non-null    int64  
+ 11  Humidity9am    328 non-null    int64  
+ 12  Humidity3pm    328 non-null    int64  
+ 13  Pressure9am    328 non-null    float64
+ 14  Pressure3pm    328 non-null    float64
+ 15  Cloud9am       328 non-null    int64  
+ 16  Cloud3pm       328 non-null    int64  
+ 17  Temp9am        328 non-null    float64
+ 18  Temp3pm        328 non-null    float64
+ 19  RainToday      328 non-null    object 
+ 20  RISK_MM        328 non-null    float64
+ 21  RainTomorrow   328 non-null    object 
+dtypes: float64(12), int64(5), object(5)
+memory usage: 58.9+ KB
+None
+          MinTemp     MaxTemp    Rainfall  ...     Temp9am     Temp3pm     RISK_MM
+count  328.000000  328.000000  328.000000  ...  328.000000  328.000000  328.000000
+mean     7.742988   20.897561    1.440854  ...   12.815549   19.556402    1.422561
+std      5.945199    6.707310    4.289427  ...    5.542521    6.644311    4.234023
+min     -5.300000    7.600000    0.000000  ...    0.100000    5.100000    0.000000
+25%      2.850000   15.500000    0.000000  ...    8.175000   14.500000    0.000000
+50%      7.900000   20.400000    0.000000  ...   13.500000   18.850000    0.000000
+75%     12.800000   25.800000    0.200000  ...   17.200000   24.225000    0.200000
+max     20.900000   35.800000   39.800000  ...   24.700000   34.500000   39.800000
+
+[8 rows x 17 columns]
